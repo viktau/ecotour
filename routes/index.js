@@ -14,5 +14,10 @@ router.get('/tours', function(req, res, next) {
 router.get('/contakt', function(req, res, next) {
     res.render('contakt', { title: 'Контакти' });
 });
-
+router.post('/contakt', function(req, res, next) {
+    console.log("Обробка форми " + req.body.firstname);
+    console.log("Обробка форми " + req.body.Town);
+    console.log("Обробка форми " + req.body.Email);
+    res.render('contakt', { title: 'Контакти' });
+});
 module.exports = router;
