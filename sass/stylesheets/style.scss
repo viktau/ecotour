@@ -1,0 +1,54 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+div {
+    float: left;
+}
+
+.news {
+    border: 2 px solid red;
+    border-radius: 15px 20px;
+    color: blue;
+    background-color: aquamarine;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+}
+
+main {
+    width: 60%;
+    background-color: blueviolet;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+}
+
+h1+p {
+    color: black;
+    //width: 480px;
+    //height: 80px;
+}
+
+aside {
+    width: 40%;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: right;
+}
+
+.flag_country {
+    background-color: green;
+    opacity: 0.8;
+}
+
+footer {
+    clear: both;
+}
