@@ -1,26 +1,12 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-<div>
-    <table>
-        <caption>Оберіть ТУР</caption>
-      <thead>
- <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-</tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td><img src='http://loremflickr.com/20/20/ukraine%20flag' alt=''/>Ukraine</td>
-              <td><img src='http://loremflickr.com/20/20/romania%20flag' alt=''/>Romania</td>
-              <td><img src='http://loremflickr.com/20/20/Poland%20flag' alt=''/>Poland</td>
-          </tr>
-          <tr>
-              <td><img src='http://loremflickr.com/20/20/Czech%20flag' alt=''/>Czech</td>
-              <td><img src='http://loremflickr.com/20/20/Slovakia%20flag' alt=''/>Slovakia</td>
-              <td><img src='http://loremflickr.com/20/20/Slovenia%20flag' alt=''/>Slovenia</td>
-          </tr>
-      </tbody>
-    </table>
-</div>
+
+<table>
+
+{{#each countries_list}}
+    <tr>
+        <td><img src="{{this.country_img}}" alt="{{this.county_alt}}" ></td>
+        <td class="flag_country">{{this.country_dsc}} </td>
+    </tr>
+{{/each}}
+
+</table>

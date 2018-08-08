@@ -1,2 +1,2 @@
 # ecotour
-Ecotour sait
+Demo ecotour

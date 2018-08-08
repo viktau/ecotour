@@ -1,47 +1,15 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-<div>
-    <table >
-        <caption>Тури, путівки, акції</caption>
-        <tdead>
-<tr>
-    <td>Тур</td>
-    <td>Кількість днів</td>
-    <td>Ціна</td>
-</tr>
-</tdead>
-<tbody>
-<tr>
-    <td>Яремче</td>
-    <td>6 ночей</td>
-    <td>2700 грн.</td>
-</tr>
-<tr>
-    <td>Татарів</td>
-    <td>6 ночей</td>
-    <td>3500 грн.</td>
-</tr>
-<tr>
-    <td>Славське</td>
-    <td>6 ночей</td>
-    <td>3540 грн.</td>
-</tr>
-<tr>
-    <td>New Brunswick</td>
-    <td>4 ночей</td>
-    <td>3000 $.</td>
-</tr>
-<tr>
-    <td>Yamnuska Mountain</td>
-    <td>2 ночей</td>
-    <td>1540 $.</td>
-</tr>
-<tfoot>
+<h1> Тури</h1>
 
-<tr>
-<td>Updated September 29, 2016</td>
-</tr>
-</tfoot>
-</tbody>
-    </table>
-</div>
+<body>
+    <div class="container">
+        <table>
+         {{#each tours_list}}
+         <tr>
+             <td>{{this.tours_country}}</td>
+             <td>{{this.tours_date}}</td>
+             <td>{{this.tours_price}}</td>
+        </tr>
+        {{/each}}
+        </table>
+      
+</div> 
