@@ -1,10 +1,81 @@
-<h1>Контакти</h1>
-<form action="/contact" method="POST">
-    email: <br>
-    <input type="email" name="email"><br>
-    Дата від'їзду: <br>
-    <input type="month" name="data"><br>
-    Введіть повідомлення тут: <br>
-    <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
-    <input type="submit" value="Відправити">
+<h1>{{title}}</h1>
+<p>Туристична компанія «TEST Tour» надає послуги приватним особам та корпоративним клієнтам по всій території України.
+    Адреси офісів, телефони, схеми проїзду у Києві, Запоріжжі та інших містах Ви знайдете на цій сторінці. {{title}}</p>
+<form class="form-horizontal" method="POST">
+    <fieldset>
+        <legend>Зв'яжіться з нами</legend>
+        <div class="form-group has-error has-feedback">
+            <label for="firstname" class="control-lable col-md-3">Ваше ім'я:</label>
+            <div class="control-lable col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    <input class="form-control" id="firstname" name="firstname" type="text" required="required"
+                        placeholder="Enter your first name">
+
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Town" class="control-lable col-md-3">Місто:</label>
+            <div class="control-lable col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-home"></span>
+                    </div>
+                <input class="form-control" id="Town" name="Town" type="text" required="required" placeholder="Enter your town">
+            </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="telephone" class="control-lable col-md-3">Телефон:</label>
+            <div class="control-lable col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-phone-alt"></span>
+                    </div>
+                <input class="form-control" id="telephone" name="telephone" type="number" required="required"
+                    placeholder="Enter your telephone">
+            </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Email" class="control-lable col-md-3">Email:</label>
+            <div class="control-lable col-md-6">
+               <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                    </div>
+                <input class="form-control" id="Email" name="Email" type="text" required="required" placeholder="Enter your town">
+            </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Comment" class="control-lable col-md-3">Коментар:</label>
+            <div class="control-lable col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </div>
+                <input class="form-control" id="Comment" name="Comment" type="text" required="required" placeholder="Enter your town">
+            </div>
+            </div>
+        </div>
+
+    </fieldset>
+    <input class="btn btn-primary" type="submit" value="Send">
+    <div class="form-group">
+    <div class="col-md-offset-3 btn-group" data-toggle="buttons">
+        <button class="btn btn-default active">TEST 1</button>
+        <button class="btn btn-default">TEST 2</button>
+        <button class="btn btn-default">TEST 3</button>
+    </div>
+    </div>
+    <div class="alert alert-warning alert-dismissable">
+       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+           X
+       </button>
+Luser        
+    </div>
 </form>

@@ -2,14 +2,23 @@
 
 <body>
     <div class="container">
-        <table>
-         {{#each tours_list}}
+        <table class="table table-hover">
+         <thead></thead>
          <tr>
-             <td>{{this.tours_country}}</td>
-             <td>{{this.tours_date}}</td>
-             <td>{{this.tours_price}}</td>
+             <th>Країни</th>
+             <th>Дата</th>
+             <th> Ціна</th>
+         </tr>
+         <tbody>
+         {{#each tours_list}}
+         
+         <tr>
+             <td >{{this.tours_country}}</td>
+             <td >{{this.tours_date}}</td>
+             <td >{{this.tours_price}}</td>
         </tr>
         {{/each}}
-        </table>
+        </tbody>
+                </table>
       
 </div> 
