@@ -1,0 +1,122 @@
+<p>Домашня робота {{title}}</p>
+<form class="form-horizontal" method="POST">
+    <fieldset>
+        <legend>Зв'яжіться з нами</legend>
+        <div class="form-group has-error has-feedback">
+            <label for="firstname" class="control-lable col-md-3">Як до вас звертатись</label>
+            <div class="control-lable col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    <select class="form-control" id="greet1">
+                    <option value="1">Mr</option>
+                    <option value="2">Mrs</option>
+                    <option value="3">Sen</option>
+                        </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="First_Lastname" class="control-lable col-md-3">Прізвище та ім'я</label>
+            <div class="control-lable col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-home"></span>
+                    </div>
+                <input class="form-control" id="First_Lastname" name="First_Lastname" type="text" required="required" placeholder="Enter your firstname and lastname">
+            </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="company" class="control-lable col-md-3">Компанія/навч. заклад</label>
+            <div class="control-lable col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-phone-alt"></span>
+                    </div>
+                <input class="form-control" id="company" name="company" type="text" required="required"
+                    placeholder="Enter your company">
+            </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Email" class="control-lable col-md-3">Email:</label>
+            <div class="control-lable col-md-6">
+               <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                    </div>
+                <input class="form-control" id="Email" name="Email" type="text" required="required" placeholder="Enter your Email">
+            </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="job" class="control-lable col-md-3">Посада/спеціальність</label>
+            <div class="control-lable col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </div>
+                <input class="form-control" id="job" name="job" type="text" required="required" placeholder="Enter your job">
+            </div>
+            </div>
+        </div>
+         <div class="form-group">
+            <label for="town" class="control-lable col-md-3">Town</label>
+            <div class="control-lable col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </div>
+                <input class="form-control" id="town" name="town" type="text" required="required" placeholder="Enter your town">
+            </div>
+            </div>
+        </div>
+         <div class="form-group">
+            <label for="Participation" class="control-lable col-md-3">Участь: очна/заочна </label>
+            <div class="control-lable col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </div>
+                <input class="form-control" id="Participation" name="Participation" type="text" required="required" placeholder="Enter your Participation">
+            </div>
+            </div>
+        </div>
+         <div class="form-group">
+            <label for="Attendant" class="control-lable col-md-3">Учасник доктор наук: так/ні</label>
+            <div class="control-lable col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </div>
+                <input class="form-control" id="Attendant" name="Attendant" type="text" required="required" placeholder="Enter your Attendant">
+            </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Comment" class="control-lable col-md-3">Як на зробити конференцію кориснішою та цікавіщою</label>
+            <div class="control-lable col-md-6">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </div>
+                <textarea class="form-control" id="Comment" name="Comment" rows="10" cols="8" required="required" placeholder="Enter your coment"></textarea>
+            </div>
+            </div>
+        </div>
+    </fieldset>
+    <input class="btn btn-primary" type="submit" value="Send">
+    <div class="form-group">
+        <div class="col-md-offset-3 btn-group" data-toggle="buttons">
+        <button class="btn btn-default active">TEST 1</button>
+        </div>
+    </div>
+    <div class="alert alert-warning alert-dismissable">
+       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+           X
+       </button>
+Luser        
+    </div>
+</form>

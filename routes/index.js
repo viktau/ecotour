@@ -94,4 +94,11 @@ router.post('/contact', function(req, res, next) {
     console.log('Отримано повідомлення :' + req.body.email);
     res.render('contact-success', { title: 'Контакти' });
 });
+router.get('/homemade', function(req, res, next) {
+    res.render('homemade', { title: 'ДЗ' });
+});
+router.post('/homemade', function(req, res, next) {
+    console.log('Отримано повідомлення :' + req.body.email);
+    res.render('contact-success', { title: 'ДЗ' });
+});
 module.exports = router;
